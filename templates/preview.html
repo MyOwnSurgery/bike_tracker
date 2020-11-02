@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+     progress {
+     height: 80px;
+     width: 800px;
+     opacity: 0;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+     }
+     form {
+     opacity: 100;
+     }
+     title {
+     opacity: 100;
+     }
+     video {
+     opacity: 100;
+     }
+     
+</style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h1 id = "title" class = "title">Video</h1>
+
+ <video controls = "controls" poster width="400" height="300" id = "video" class = "video">
+
+     <source src= "../static/{{video}}" type = "video/mp4">
+ </video>
+ <form method = "POST" action="/process" id = "form" class = "form">
+        <label>Process file</label>
+        <button type = "submit" onclick = "enable()">Start tracker</button>
+        <input type="hidden" name="ext" value = {{ext}}>
+    </form>
+</head>
+<body>
+<progress max = {{time}} value = "1" id = "progress"></progress>
+ <script>
+
+
+
+function enable() {
+
+ document.getElementById("progress").style.opacity = 100;
+ document.getElementById("form").style.opacity = 0;
+ document.getElementById("title").style.opacity = 0;
+ document.getElementById("video").style.opacity = 0;
+setInterval(count, 1000)
+}
+function count(){
+   document.getElementById("progress").value++;
+   }
+
+</script>
+</body>
+</html>

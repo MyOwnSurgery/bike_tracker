@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+     progress {
+     height: 80px;
+     width: 800px;
+     opacity: 0;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+     }
+     form {
+     opacity: 100;
+     }
+     title {
+     opacity: 100;
+     }
+     
+</style>
+    <title>Home page</title>
+    </head>
+
+            <h1 id = "title" class = "title">File uploading (.avi format is highly recommended, some formats may cause distortion). Please check your files before uploading</h1>
+    <form method = "POST" action="/upload" enctype="multipart/form-data" class = "form" id ="form">
+        <label>Send file to server</label>
+        <input type = "file" name = "inputFile" id = "fileUpload">
+        <button type = "submit" id ="button" onclick="enable()">Send</button>
+
+    </form>
+
+<body>
+
+</body>
+<progress max = "10" value = "1" id = "progress"></progress>
+   <script>
+
+
+
+function enable() {
+let fileUpload = document.getElementById("fileUpload");
+
+document.getElementById("progress").max = fileUpload.files[0].size / 4000000;
+document.getElementById("progress").style.opacity = 100;
+document.getElementById("form").style.opacity = 0;
+document.getElementById("title").style.opacity = 0;
+setInterval(count, 1000)
+
+function count(){
+   document.getElementById("progress").value++;
+   }
+}
+</script>
+    </body>
+</html>

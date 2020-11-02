@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploading...</title>
+    <style>
+    body {
+        color: white;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) }
+     progress {
+     height: 80px;
+     width: 800px;
+     }
+</style>
+</head>
+<body>
+<progress max = "10" value = "1" id = "progress"></progress>
+<script type="text/javascript">
+
+   if (document.getElementById('progress').value == document.getElementById('progress').max){
+location.replace("http://jsbeginning.travelpalitra.com");
+   }
+</script>
+</body>
+</html>

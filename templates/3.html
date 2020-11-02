@@ -1,0 +1,42 @@
+<table border="1" class="dataframe">
+  {% set count = 0 %}<thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>frame</th>
+      <th>id</th>
+      <th>finish_time</th>
+      <th>Recognitions</th>
+      <th>Recognised_plate</th>
+      <th>plate_number</th>
+      <th>Bike_image</th>
+      <th>Full_frame</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>131</td>
+      <td>8</td>
+      <td>00:00:05.240</td>
+      <td><img src="../static/3/res_131_8.jpg" width="200" ></td>
+      <td><img src="../static/3/plate_131_8.jpg" width="200" ></td>
+      <td>2</td>
+      <td><img src="../static/3/131_8.jpg" width="200" ></td>
+      <td><img src="../static/3/131_fullframe.jpg" width="500" ></td><td><form action = "/edit/{{count}}"><button type = "submit">Edit</button></form></td> {% set count = count + 1 %}
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>144</td>
+      <td>9</td>
+      <td>00:00:05.760</td>
+      <td><img src="../static/3/res_144_9.jpg" width="200" ></td>
+      <td><img src="../static/3/plate_144_9.jpg" width="200" ></td>
+      <td>XXX</td>
+      <td><img src="../static/3/144_9.jpg" width="200" ></td>
+      <td><img src="../static/3/144_fullframe.jpg" width="500" ></td><td><form action = "/edit/{{count}}"><button type = "submit">Edit</button></form></td> {% set count = count + 1 %}
+    </tr>
+  </tbody>
+</table>

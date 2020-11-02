@@ -1,0 +1,30 @@
+<table border="1" class="dataframe">
+  {% set count = 0 %}<thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>index</th>
+      <th>frame</th>
+      <th>id</th>
+      <th>finish_time</th>
+      <th>Recognitions</th>
+      <th>Recognised_plate</th>
+      <th>plate_number</th>
+      <th>Bike_image</th>
+      <th>Full_frame</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>252</td>
+      <td>8</td>
+      <td>00:00:04.271</td>
+      <td><img src="../static/2/res_252_8.jpg" width="200" ></td>
+      <td><img src="../static/2/plate_252_8.jpg" width="200" ></td>
+      <td>22</td>
+      <td><img src="../static/2/252_8.jpg" width="200" ></td>
+      <td><img src="../static/2/252_fullframe.jpg" width="500" ></td><td><form action = "/edit/{{count}}"><button type = "submit">Edit</button></form></td> {% set count = count + 1 %}
+    </tr>
+  </tbody>
+</table>
