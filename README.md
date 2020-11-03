@@ -11,7 +11,7 @@
 pip install -r requirements.txt
 ```
 
-* Run with pretrained model
+* Run project
 ``` (with python 3.7)
 python webapp.py 
 ```
