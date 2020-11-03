@@ -18,7 +18,7 @@ if after creating the environment some of modules can't be found please search t
 python load_weights.py
 ```
 
-* Run project
+### Run project
 ``` (with python 3.7)
 python webapp.py 
 ```
