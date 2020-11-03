@@ -8,7 +8,7 @@ conda env create -f conda-gpu.yml
 conda activate project
 conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
 ```
-if after creating the environment some of modules can't be found please search the proper way of installation on the Internet
+if after creating the environment some of modules can't be found please search the proper way of installation on the Internet (some modules can be missed also)
  
 ### Getting models and weights
 - https://drive.google.com/file/d/1Jk4eGD7crsqCCg9C9VjCLkMN3ze8kutZ/view (get craft_mlt_25k.pth and place it into bike_tracker/text-detection/weights)
