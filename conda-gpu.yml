@@ -1,0 +1,32 @@
+name: project
+
+dependencies:
+  - python==3.7
+  - pip
+  - matplotlib
+  - opencv
+  - cudnn
+  - cudatoolkit
+  - sqlalchemy
+  - psycopg2
+  - flask
+  - pandas
+  - moviepy
+  - openpyxl
+  - werkzeug
+  - natsort
+  - lmdb
+  - nltk
+  - numpy
+  - scipy
+  - six
+  - keras
+  - skimage
+  - pip:
+    - tensorflow-gpu
+    - lxml
+    - tqdm
+    - seaborn
+    - pillow
+    - absl
+
