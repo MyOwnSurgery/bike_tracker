@@ -35,7 +35,7 @@ flags.DEFINE_string('video', './data/video/test.mp4',
 flags.DEFINE_string('output', None, 'path to output video')
 flags.DEFINE_string('output_format', 'XVID', 'codec used in VideoWriter when saving video to file')
 flags.DEFINE_integer('num_classes', 80, 'number of classes in the model')
-
+database_url = 'postgresql+psycopg2://login:password@localhost:5432/mydb'
 
 def main(_argv):
     # Definition of the parameters
@@ -246,7 +246,7 @@ def main(_argv):
             df.reset_index(drop=True)
 
 
-            engine = sqlalchemy.create_engine('postgresql+psycopg2://mayorov:x3light99@localhost:5432/mydb')
+            engine = sqlalchemy.create_engine(database_url)
             table_name = 'table_' + vid_name
             df.to_sql(table_name, engine)
 
