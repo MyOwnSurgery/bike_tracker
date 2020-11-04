@@ -6,7 +6,7 @@ dependencies:
   - matplotlib
   - opencv
   - cudnn
-  - cudatoolkit
+  - cudatoolkit==10.1.243
   - sqlalchemy
   - psycopg2
   - flask
@@ -21,7 +21,7 @@ dependencies:
   - six
   - keras
   - pip:
-    - tensorflow-gpu
+    - tensorflow-gpu==2.1.2
     - lxml
     - tqdm
     - seaborn
