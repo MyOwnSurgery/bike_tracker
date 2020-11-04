@@ -36,7 +36,7 @@ def home():
 def convert(source,target):
     #avi => mp4
     clip = mp.VideoFileClip(source)
-    #may not work so I leave it commented
+    #may not work so I have left it commented (moviepy can complain about the absence of a codec)
     #clip.write_videofile(target)
 
 def read_table(session,engine):
@@ -130,7 +130,8 @@ def upload():
     file.save(destination)
 
     #html can`t work with avi so we should convert video to mp4
-    convert("static/"+session+"." +ext,"static/"+session+".mp4")
+    if ext != 'mp4':
+       convert("static/"+session+"." +ext,"static/"+session+".mp4")
     clip = mp.VideoFileClip("static/"+session+"." +ext)
     return render_template("preview.html", video = session + ".mp4", time = 60 + clip.duration*3, ext = ext)
     
