@@ -25,9 +25,7 @@ bike_tracker/object_tracker.py
 ```
 bike_tracker/webapp.py
 ```
-```
-bike_tracker/text-recognition/demo.py
-```
+
 
 
 ### Run project
