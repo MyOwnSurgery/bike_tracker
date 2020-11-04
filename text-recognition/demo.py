@@ -13,7 +13,7 @@ from model import Model
 import os
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 project_path = os.path.dirname(os.path.realpath(__file__))+'/'
-db_url = 'postgresql+psycopg2://mayorov:x3light99@localhost:5432/mydb'
+db_url = 'postgresql+psycopg2://login:password@localhost:5432/mydb'
 
 def demo(opt, length):
     """ model configuration """
