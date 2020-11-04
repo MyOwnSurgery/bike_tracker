@@ -37,5 +37,6 @@ bike_tracker/webapp.py
 ``` (with python 3.7)
 python webapp.py 
 ```
-
+### Try application
+Go to localhost:5000 and upload video
 
