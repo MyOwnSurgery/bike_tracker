@@ -154,7 +154,7 @@ def process():
     start.main(project_path+"static/" + session + "/", project_path+"static/" + session + "/")
     
     #calling text recogniser, 2nd parameter helps us to get db name etc
-    demo.main(project_path+"static/"+session+"/", len(project_path)+7)
+    demo.main(project_path+"static/"+session+"/", len(project_path)+7,db_url)
     
     #reading table and writing data to html
     df = read_table(session,engine)
