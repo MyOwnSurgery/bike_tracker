@@ -16,8 +16,6 @@ dependencies:
   - natsort
   - lmdb
   - nltk
-  - numpy
-  - scipy
   - six
   - keras
   - pip:
@@ -26,4 +24,5 @@ dependencies:
     - tqdm
     - seaborn
     - pillow
+
 
