@@ -27,7 +27,7 @@ APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 app.secret_key = os.urandom(24)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 #db url etc.
-db_url = 'postgresql+psycopg2://mayorov:x3light99@localhost:5432/mydb'
+db_url = 'postgresql+psycopg2://login:password@localhost:5432/mydb'
 
 @app.route("/")  # this sets the route to this page
 def home():
