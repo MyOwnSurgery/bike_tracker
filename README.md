@@ -7,6 +7,8 @@
 conda env create -f conda-gpu.yml
 conda activate project
 conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+conda install -c anaconda scikit-image
+conda install -c conda-forge moviepy
 ```
 if after creating the environment some of modules can't be found please search the proper way of installation on the Internet (some modules can be missed also)
  
