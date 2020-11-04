@@ -13,9 +13,9 @@ from model import Model
 import os
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 project_path = os.path.dirname(os.path.realpath(__file__))+'/'
-db_url = 'postgresql+psycopg2://login:password@localhost:5432/mydb'
 
-def demo(opt, length):
+
+def demo(opt, length,db_url):
     """ model configuration """
     if 'CTC' in opt.Prediction:
         converter = CTCLabelConverter(opt.character)
@@ -126,7 +126,7 @@ def demo(opt, length):
             log.close()
 
 #initially it was meant to call this module from cmd but now we can just define all of there variables as global variables
-def main(source, length):
+def main(source, length, db_url):
     parser = argparse.ArgumentParser()
     parser.add_argument('--image_folder', default = 'demo_image', required=False, help='path to image_folder which contains text images')
     parser.add_argument('--workers', type=int, help='number of data loading workers', default=4)
@@ -163,4 +163,4 @@ def main(source, length):
     
     #changing image folder path
     opt.image_folder = source
-    demo(opt, length)
+    demo(opt, length,db_url)
