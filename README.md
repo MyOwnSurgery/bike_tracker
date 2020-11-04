@@ -17,6 +17,18 @@ if after creating the environment some of modules can't be found please search t
 ```
 python load_weights.py
 ```
+### Database connectivity
+Download and install PostgreSQL and specify your url, login and password in the following files:
+```
+bike_tracker/object_tracker.py
+```
+```
+bike_tracker/webapp.py
+```
+```
+bike_tracker/text-recognition/demo.py
+```
+
 
 ### Run project
 ``` (with python 3.7)
