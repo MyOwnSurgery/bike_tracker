@@ -36,7 +36,7 @@ def home():
 def convert(source,target):
     #avi => mp4
     clip = mp.VideoFileClip(source)
-    #may not work so I have left it commented (moviepy can complain about the absence of a codec)
+    #may not work so I left it commented (moviepy can complain about the absence of a codec)
     #clip.write_videofile(target)
 
 def read_table(session,engine):
