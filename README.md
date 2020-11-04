@@ -22,7 +22,7 @@ if after creating the environment some of modules can't be found please search t
 python load_weights.py
 ```
 ### Database connectivity
-Download and install PostgreSQL and specify your url, login and password in the following files:
+Download and install PostgreSQL and specify your url, login, password and db name in the following files:
 ```
 bike_tracker/object_tracker.py
 ```
@@ -37,5 +37,8 @@ bike_tracker/webapp.py
 python webapp.py 
 ```
 ### Try application
-Go to localhost:5000 and upload video
-
+Go to 
+```
+localhost:5000 
+```
+and upload video
