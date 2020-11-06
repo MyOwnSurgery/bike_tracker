@@ -45,7 +45,7 @@ You gonna see this page. Upload your video and click "Send".
 
 <img width="1000" alt="teaser" src="./figures/1.jpg">
 
-The next page will show your video (it will be working if you uncomment 40th line of webapp.py (you can face some problems with codec so it is commented for now)). Here you can click "Start tracker".
+The next page will show your video (it should be working if you uncomment 40th line of webapp.py (you can face some problems with codec so it is commented for now)). Here you can click "Start tracker".
 
 <img width="1000" alt="teaser" src="./figures/2.jpg">
 
