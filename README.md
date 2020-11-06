@@ -41,4 +41,15 @@ Go to
 ```
 localhost:5000 
 ```
-and upload video
+You gonna see this page
+<img width="1000" alt="teaser" src="./figures/1.jpg">
+Upload your video and click "Send"
+<img width="1000" alt="teaser" src="./figures/2.jpg">
+The next page will show your video (it will be working if you uncomment 40th line of webapp.py). Here you can click "Start tracker".
+After processing the video you gonna see the results.
+<img width="1000" alt="teaser" src="./figures/3.jpg">
+Here you can download the results as an xslx report
+<img width="1000" alt="teaser" src="./figures/4.jpg">
+Or edit the plate number (if it does not match with the real one)
+<img width="1000" alt="teaser" src="./figures/5.jpg">
+
