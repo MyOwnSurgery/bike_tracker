@@ -41,6 +41,10 @@ Go to
 ```
 localhost:5000 
 ```
+in your browser.
+
+<img width="1000" alt="teaser" src="./figures/0.jpg">
+
 You gonna see this page. Upload your video and click "Send".
 
 <img width="1000" alt="teaser" src="./figures/1.jpg">
