@@ -41,7 +41,7 @@ Go to
 ```
 localhost:5000 
 ```
-in your browser.
+in your browser (I access the application from the remote server so I have another address).
 
 <img width="1000" alt="teaser" src="./figures/0.jpg">
 
