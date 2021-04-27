@@ -248,7 +248,7 @@ def main(_argv):
 
             engine = sqlalchemy.create_engine(database_url)
             table_name = 'table_' + vid_name
-            df.to_sql(table_name, engine)
+            df.to_sql(table_name, engine, method='multi')
 
 
         list_file.close()
