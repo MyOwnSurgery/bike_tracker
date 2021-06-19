@@ -70,3 +70,5 @@ Or edit plate numbers (if they do not match with the real ones).
 
 <img width="1000" alt="teaser" src="./figures/5.jpg">
 
+### Authors
+Майоров А.В., Якимов П.Ю.
